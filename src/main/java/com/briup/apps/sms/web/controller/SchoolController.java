@@ -23,4 +23,12 @@ public class SchoolController {
 		return schoolService.selectAll();
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
 }
