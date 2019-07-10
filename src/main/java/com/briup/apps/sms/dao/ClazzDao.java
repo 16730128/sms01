@@ -5,7 +5,7 @@ import java.util.List;
 import com.briup.apps.sms.bean.Clazz;
 
 public interface ClazzDao {
-	//查询所有
+	//查询所有信息
 	List<Clazz> selectAll();
 	//插入
     void insert (Clazz clazz);
