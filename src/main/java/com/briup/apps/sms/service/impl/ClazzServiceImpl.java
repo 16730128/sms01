@@ -15,7 +15,7 @@ import com.briup.apps.sms.service.ClazzService;
  * */
 @Service
 public class ClazzServiceImpl implements ClazzService {
-		// 依赖注入，实例化ClazzDao并且赋值给ClazzDao这个变量
+		// 依赖注入， 实例化ClazzDao并且赋值给ClazzDao这个变量
 		@Resource
 		private ClazzDao clazzDao;
 		

@@ -1,6 +1,6 @@
 package com.briup.apps.sms.bean;
 /*
- * 课程类*/
+ * 课程类  */
 public class Clazz {
 
 	private Long id;
