@@ -1,5 +1,5 @@
 package com.briup.apps.sms.dao;
 
-public class User_RoleDao {
-
+public interface User_RoleDao {
+   
 }
