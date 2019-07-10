@@ -11,7 +11,7 @@ import com.briup.apps.sms.bean.Course;
 import com.briup.apps.sms.service.CourseService;
 
 @RestController
-@RequestMapping("/Course")
+@RequestMapping("/course")
 public class CourseController {
 	
 	@Autowired
