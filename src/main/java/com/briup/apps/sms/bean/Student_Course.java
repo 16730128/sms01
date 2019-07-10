@@ -6,6 +6,8 @@ public class Student_Course {
 	private Long course_id;
 	private String xk_time;
 	private int grade;
+	
+	
 	public Long getId() {
 		return id;
 	}
@@ -36,5 +38,4 @@ public class Student_Course {
 	public void setGrade(int grade) {
 		this.grade = grade;
 	}
-	
 }

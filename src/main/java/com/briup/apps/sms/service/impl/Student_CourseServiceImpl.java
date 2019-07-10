@@ -13,24 +13,26 @@ import com.briup.apps.sms.dao.Student_CourseDao;
 import com.briup.apps.sms.service.SchoolService;
 import com.briup.apps.sms.service.Student_CourseService;
 
+/**
+ * 校园逻辑逻辑处理的实现类
+ * */
 @Service
 public class Student_CourseServiceImpl implements Student_CourseService {
-		
+		// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
 		@Resource
-		private Student_CourseDao scDao;
+		private Student_CourseDao student_CourseDao;
 		
-		@Override
 		public List<Student_Course> selectAll(){
-			return scDao.selectAll();
+			return student_CourseDao.selectAll();
 		}
-		@Override
-		public void saveOrUpdate(Student_Course sc) throws Exception{
-			if(sc.getId()==null) {
-				scDao.insert(sc);
+		public void saveOrUpdate(Student_Course student_Course) throws Exception{
+			if(student_Course.getId()==null) {
+				student_CourseDao.insert(student_Course);
 			}
 			else {
-				scDao.update(sc);
+				student_CourseDao.update(student_Course);
 			}
+			
 		}
 		
 
