@@ -1,5 +1,6 @@
 package com.briup.apps.sms.bean;
-
+/*
+ * 大学信息*/
 public class College {
 	private Long id;
 	private String name;
