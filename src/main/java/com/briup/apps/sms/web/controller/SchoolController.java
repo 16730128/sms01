@@ -19,7 +19,7 @@ public class SchoolController {
 	
 	//http://localhost:8080/school/selectAll
 	@GetMapping("selectAll")
-	public List<School>selectAll(){
+	public List<School> selectAll(){
 		return schoolService.selectAll();
 	}
 	
