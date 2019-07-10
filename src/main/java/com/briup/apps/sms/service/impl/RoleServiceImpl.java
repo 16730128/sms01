@@ -7,11 +7,9 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.briup.apps.sms.bean.Role;
-import com.briup.apps.sms.bean.School;
 import com.briup.apps.sms.dao.RoleDao;
-import com.briup.apps.sms.dao.SchoolDao;
 import com.briup.apps.sms.service.RoleService;
-import com.briup.apps.sms.service.SchoolService;
+
 
 @Service
 public class RoleServiceImpl implements RoleService {
