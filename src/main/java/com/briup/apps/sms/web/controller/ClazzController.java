@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.briup.apps.sms.bean.Clazz;
 import com.briup.apps.sms.service.ClazzService;
 
-//接受参数，返回结果
+//接受参数，返回结果,
 
 @RestController
 @RequestMapping("/Clazz")
