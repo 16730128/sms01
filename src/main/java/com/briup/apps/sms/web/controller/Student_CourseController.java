@@ -20,8 +20,6 @@ public class Student_CourseController {
 	@Autowired
 	private Student_CourseService student_CourseService;
 	
-	 
-	
 	@PostMapping("saveOrUpdate")
 	public String saveOrUpdate(Student_Course  student_Course) {
 		try {
@@ -31,10 +29,8 @@ public class Student_CourseController {
 			// TODO: handle exception
 			e.printStackTrace();
 			return e.getMessage();
-		}
-		
+		}	
 	}
-	
 	//http://localhost:8080/student_course/selectAll
 	@GetMapping("selectAll")
 	public List<Student_Course> selectAll(){
