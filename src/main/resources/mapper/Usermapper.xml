@@ -8,17 +8,18 @@
     select * from sms_user
   </select>
     <insert id="insert">
-  		insert into sms_user values(null,#{name},#{description}, #{tel},#{address})
+  		insert into sms_user values(null,#{realname},#{tel},#{password},#{student_no},#{gender},#{clazz_id})
   </insert>
   
   
   <update id="update">
 		update sms_user
-		set name = #{name},
-		description = #{description},
-		tel = #{tel},
-		address = #{address}
-		where id = #{id}
+		set realname = #{realname},
+		telephone = #{tel},
+		password = #{password},
+		student_no = #{student_no},
+		gender = #{gender},
+		clazz_id = #{clazz_id},
   </update>
   
   
