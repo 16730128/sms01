@@ -31,8 +31,12 @@ public class Student_CourseServiceImpl implements Student_CourseService {
 			}
 			else {
 				student_CourseDao.update(student_Course);
-			}
-			
+			}	
+		}
+		@Override
+		public void deleteById(long id) throws Exception {
+			// TODO Auto-generated method stub
+			student_CourseDao.deleteById(id);
 		}
 		
 

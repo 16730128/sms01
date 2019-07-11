@@ -16,4 +16,6 @@ public interface Student_CourseDao {
 	//更新
 	void update(Student_Course student_Course);
 	
+	//删除
+	void deleteById(long id);
 }
