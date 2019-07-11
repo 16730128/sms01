@@ -15,4 +15,12 @@ public interface UserDao {
 	//更新
 	void update(User user);
 	
+	//通过ID删除
+	
+
+	void deleteById(long id);
+
+	
+		
+	
 }

@@ -7,4 +7,23 @@
   resultType="com.briup.apps.sms.bean.User">
     select * from sms_user
   </select>
+    <insert id="insert">
+  		insert into sms_user values(null,#{name},#{description}, #{tel},#{address})
+  </insert>
+  
+  
+  <update id="update">
+		update sms_user
+		set name = #{name},
+		description = #{description},
+		tel = #{tel},
+		address = #{address}
+		where id = #{id}
+  </update>
+  
+  
+  <delete id="deleteById">
+		delete from sms_user 
+		where id = #{id}
+  </delete>
 </mapper>

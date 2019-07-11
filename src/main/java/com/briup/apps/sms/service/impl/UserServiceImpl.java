@@ -33,6 +33,11 @@ public class UserServiceImpl implements UserService {
 			}
 			
 		}
-		
 
+		//删除
+				@Override
+				public void deleteById(long id) throws Exception {
+					( userDao).deleteById(id);
+				}
+				
 }
