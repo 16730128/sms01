@@ -30,7 +30,7 @@ public class UserController {
 		}
 		
 		
-	
+
 	//http://localhost:8080/user/selectAll
 	@GetMapping("selectAll")
 	public List<User> selectAll(){
