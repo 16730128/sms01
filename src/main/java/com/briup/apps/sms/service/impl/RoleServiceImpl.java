@@ -28,8 +28,13 @@ public class RoleServiceImpl implements RoleService {
 			}
 			else {
 				roleDao.update(role);
+				
 			}
 		}
+			@Override
+			public void deleteById(long id) throws Exception {
+				roleDao.deleteById(id);
+				}
 		
 
 }

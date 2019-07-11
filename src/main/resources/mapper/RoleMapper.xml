@@ -7,4 +7,20 @@
   resultType="com.briup.apps.sms.bean.Role">
     select * from sms_role
   </select>
+<insert id="insert">
+  	insert into sms_role values(null,#{name},#{description},#{tel},#{address});
+  </insert>
+
+  <update id="update">
+  	update sms_role
+	set name=#{name},
+	description=#{description},
+	tel=#{tel},
+	address=#{address}
+	where id = #{id}
+  </update>
+
+  <delete id="deleteById">
+  	delete from sms_role where id = #{id}
+  </delete>
 </mapper>
