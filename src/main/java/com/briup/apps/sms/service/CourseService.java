@@ -10,4 +10,5 @@ public interface CourseService {
 	
 	void saveOrUpdate(Course course)throws Exception;
 	
+	void deleteById(long id) throws Exception;
 }

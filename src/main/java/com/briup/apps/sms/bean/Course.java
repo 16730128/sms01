@@ -5,7 +5,7 @@ public class Course {
 	private Long id;
 	private String name;
 	private double credit;
-	private Long userid;
+	private Long user_id;
 	public Long getId() {
 		return id;
 	}
@@ -25,10 +25,10 @@ public class Course {
 		this.credit = credit;
 	}
 	public Long getUserid() {
-		return userid;
+		return user_id;
 	}
 	public void setUserid(Long userid) {
-		this.userid = userid;
+		this.user_id = userid;
 	}
 	
 }
