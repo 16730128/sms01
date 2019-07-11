@@ -19,7 +19,7 @@ public class ClazzController {
 	
 	@Autowired
 	private ClazzService clazzService;
-	//http://localhost:8080/clazz/saveOrUpdate?name="兰州财经大学"
+	//http://localhost:8080/clazz/saveOrUpdate?name="兰州财经大学" 
 		@PostMapping("saveOrUpdate")
 		public String saveOrUpdate(Clazz clazz) {
 			try {
