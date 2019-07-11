@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.Course;
 import com.briup.apps.sms.service.CourseService;
-
+//接受参数，返回结果
 @RestController
 @RequestMapping("/course")
 public class CourseController {
