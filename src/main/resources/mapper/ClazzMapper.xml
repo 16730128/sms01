@@ -8,11 +8,11 @@
     select * from sms_clazz
   </select>
   <insert id="insert">
-  insert into sms_clazz values(null,#{name},#{begain_time});
+  insert into sms_clazz values(null,#{name},#{begin_time});
   </insert>
   <update id="update">
   	update sms_school
-  	begin_time={bagin_time}
+  	begin_time={begin_time}
 	set name=#{name},
 	where id = #{id}
   </update>
