@@ -7,7 +7,6 @@ public class Student_Course {
 	private String xk_time;
 	private int grade;
 	
-	
 	//设置每个属性的getter和setter方法
 	public Long getId() {
 		return id;
