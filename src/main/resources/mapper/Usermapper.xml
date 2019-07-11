@@ -23,7 +23,7 @@
 		clazz_id = #{clazz_id}
 		where id =#{id}
   </update>
-  
+ 
   <delete id="deleteById">
 		delete from sms_user 
 		where id = #{id}
