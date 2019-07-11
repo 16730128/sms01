@@ -11,7 +11,7 @@ import com.briup.apps.sms.bean.School;
 import com.briup.apps.sms.bean.Student_Course;
 import com.briup.apps.sms.service.SchoolService;
 import com.briup.apps.sms.service.Student_CourseService;
-
+//接受参数，返回结果
 @RestController
 @RequestMapping("/student_course")
 public class Student_CourseController {
