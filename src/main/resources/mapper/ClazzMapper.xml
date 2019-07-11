@@ -12,8 +12,8 @@
   </insert>
   <update id="update">
   	update sms_class
-	set 
-	name=#{name},
+	set  
+	name=#{name}
   	begin_time=#{begin_time}
   	college_id=#{college_id}
   	
