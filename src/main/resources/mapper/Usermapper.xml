@@ -24,6 +24,7 @@
 		where id =#{id}
   </update>
  
+ 
   <delete id="deleteById">
 		delete from sms_user 
 		where id = #{id}
