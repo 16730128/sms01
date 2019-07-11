@@ -7,4 +7,17 @@
   resultType="com.briup.apps.sms.bean.Clazz">
     select * from sms_clazz
   </select>
+  <insert id="insert">
+  insert into sms_clazz values(null,#{name},#{begain_time});
+  </insert>
+  <update id="update">
+  	update sms_school
+  	begin_time={bagin_time}
+	set name=#{name},
+	where id = #{id}
+  </update>
+
+  <delete id="deleteById">
+  	delete from sms_clazz where id = #{id}
+  </delete>
 </mapper>

@@ -29,8 +29,12 @@ public class User_RoleServiceImpl implements User_RoleService {
 				user_roleDao.insert(user_role);
 			}
 			else {
-				user_roleDao.update(user_role);
+				user_roleDao.update(user_role);}
+				
 			}
+		@Override
+		public void deleteById(long id) throws Exception {
+			user_roleDao.deleteById(id);
 			
 		}
 		

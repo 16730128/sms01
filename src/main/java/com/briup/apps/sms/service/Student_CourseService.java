@@ -10,4 +10,6 @@ public interface Student_CourseService {
 	List<Student_Course> selectAll();
 	
 	void saveOrUpdate(Student_Course student_Course)throws Exception;
+	
+	void deleteById(long id) throws Exception;
 }

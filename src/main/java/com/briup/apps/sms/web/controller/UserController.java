@@ -1,7 +1,7 @@
 package com.briup.apps.sms.web.controller;
 
 import java.util.List;
-
+//接受参数，返回结果
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

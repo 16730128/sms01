@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.Role;
 import com.briup.apps.sms.service.RoleService;
-
+//接受参数，返回结果
 @RestController
 @RequestMapping("/role")
 public class RoleController {

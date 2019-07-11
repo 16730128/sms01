@@ -19,10 +19,15 @@ public class SchoolServiceImpl implements SchoolService {
 		@Resource
 		private SchoolDao schoolDao;
 		
+		
+		//查询
 		@Override
 		public List<School> selectAll(){
 			return schoolDao.selectAll();
 		}
+		
+		
+		//存储
 		@Override
 		public void saveOrUpdate(School school) throws Exception{
 			if(school.getId()==null) {
@@ -31,7 +36,13 @@ public class SchoolServiceImpl implements SchoolService {
 			else {
 				schoolDao.update(school);
 			}
-			
+		}
+		
+		
+		//删除
+		@Override
+		public void deleteById(long id) throws Exception {
+			schoolDao.deleteById(id);
 		}
 		
 

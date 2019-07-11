@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.briup.apps.sms.bean.College;
 import com.briup.apps.sms.service.CollegeService;
 
+//接受参数，返回结果
 @RestController
 @RequestMapping("/college")
 public class CollegeController {

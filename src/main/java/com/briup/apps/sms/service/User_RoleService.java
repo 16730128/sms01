@@ -11,5 +11,6 @@ public interface User_RoleService {
 	List<User_Role>  selectAll();
 	
 	void saveOrUpdate(User_Role user_role)  throws Exception;
+	void deleteById(long id) throws Exception;
 }
 
