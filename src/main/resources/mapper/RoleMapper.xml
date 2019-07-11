@@ -8,15 +8,12 @@
     select * from sms_role
   </select>
 <insert id="insert">
-  	insert into sms_role values(null,#{name},#{description},#{tel},#{address});
+  	insert into sms_role values(null,#{name});
   </insert>
 
   <update id="update">
   	update sms_role
 	set name=#{name},
-	description=#{description},
-	tel=#{tel},
-	address=#{address}
 	where id = #{id}
   </update>
 
