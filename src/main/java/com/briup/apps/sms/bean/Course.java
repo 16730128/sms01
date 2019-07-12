@@ -1,10 +1,9 @@
 package com.briup.apps.sms.bean;
-/*
- * 课程类*/
+
 public class Course {
 	private Long id;
 	private String name;
-	private double credit;
+	private Integer credit;
 	private Long user_id;
 	public Long getId() {
 		return id;
@@ -18,17 +17,17 @@ public class Course {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getCredit() {
+	public Integer getCredit() {
 		return credit;
 	}
-	public void setCredit(double credit) {
+	public void setCredit(Integer credit) {
 		this.credit = credit;
 	}
-	public Long getUserid() {
+	public Long getUser_id() {
 		return user_id;
 	}
-	public void setUserid(Long userid) {
-		this.user_id = userid;
+	public void setUser_id(Long user_id) {
+		this.user_id = user_id;
 	}
 	
 }

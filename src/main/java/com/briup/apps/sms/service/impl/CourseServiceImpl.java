@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.briup.apps.sms.bean.Course;
+import com.briup.apps.sms.bean.CourseExtend;
 import com.briup.apps.sms.dao.CourseDao;
 import com.briup.apps.sms.service.CourseService;
 
@@ -20,6 +21,13 @@ public class CourseServiceImpl implements CourseService {
 		public List<Course> selectAll(){
 			return courseDao.selectAll();
 		}
+		
+		@Override
+		public List<CourseExtend> selectAllWithTeacher() {
+			// TODO Auto-generated method stub
+			return courseDao.selectAllWithTeacher();
+	}
+		
 		@Override
 		public void saveOrUpdate(Course course) throws Exception{
 			if(course.getId()==null) {

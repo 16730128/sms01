@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.Course;
+import com.briup.apps.sms.bean.CourseExtend;
 import com.briup.apps.sms.service.CourseService;
 
 @RestController
@@ -35,6 +36,11 @@ public class CourseController {
 	public List<Course>selectAll(){
 		return courseService.selectAll();
 	}
+	
+	@GetMapping("selectAllWithTeacher")
+	public List<CourseExtend> selectAllWithTeacher(){
+		return courseService.selectAllWithTeacher();
+}
 	
 	//http://localhost:8080/course/deleteById?id=3
 	@GetMapping("deleteById")
