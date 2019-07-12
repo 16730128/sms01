@@ -19,10 +19,13 @@ public class CollegeServiceImpl implements CollegeService {
 		@Resource
 		private CollegeDao collegeDao;
 		
+		//查询
 		@Override
 		public List<College> selectAll(){
 			return collegeDao.selectAll();
 		}
+		
+		//存储
 		@Override
 		public void saveOrUpdate(College college) throws Exception{
 			if(college.getId()==null) {
@@ -34,5 +37,10 @@ public class CollegeServiceImpl implements CollegeService {
 			
 		}
 		
-
+		//删除
+		@Override
+		public void deleteById(long id) throws Exception {
+			collegeDao.deleteById(id);
+		}
+		
 }
