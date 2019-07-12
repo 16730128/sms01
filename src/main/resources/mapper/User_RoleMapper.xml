@@ -9,7 +9,7 @@
   </select>
   
   <select id="selectAllWithRoleWithUser" 
-  	resultType="com.briup.apps.sms.bean.CourseExtend">
+  	resultType="com.briup.apps.sms.bean.User_RoleExtend">
   	select ur.id as id,
   	ur.user_id as user_id,
   	u.realname as realname,
