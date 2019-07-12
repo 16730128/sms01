@@ -3,9 +3,7 @@ package com.briup.apps.sms.bean;
  * 用户——关系类*/
 public class User_Role {
 	private Long id;
-    private Long user_id;
-    private Long role_id;
-	public Long getId() {
+    public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
@@ -23,6 +21,9 @@ public class User_Role {
 	public void setRole_id(Long role_id) {
 		this.role_id = role_id;
 	}
+	private Long user_id;
+    private Long role_id;
+	
 
 
 }

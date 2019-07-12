@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import com.briup.apps.sms.bean.User_Role;
+import com.briup.apps.sms.bean.User_RoleExtend;
 import com.briup.apps.sms.service.User_RoleService;
 //接受参数，返回结果
 @RestController
@@ -37,6 +38,13 @@ public class User_RoleController {
 		return user_roleService.selectAll();
 		
 	}
+	
+	@GetMapping("selectAllWithRoleWithUser")
+	public List<User_RoleExtend> selectAllWithRoleWithUser(){
+		return user_roleService.selectAllWithRoleWithUser();
+		
+	}
+	
 	// http://localhost:8080/school/deleteById?id=3
 	@GetMapping("deleteById")
 	public String deleteById(long id) {

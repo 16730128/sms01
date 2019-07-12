@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.briup.apps.sms.bean.User_Role;
+import com.briup.apps.sms.bean.User_RoleExtend;
 import com.briup.apps.sms.dao.User_RoleDao;
 import com.briup.apps.sms.service.User_RoleService;
 
@@ -36,6 +37,11 @@ public class User_RoleServiceImpl implements User_RoleService {
 		public void deleteById(long id) throws Exception {
 			user_roleDao.deleteById(id);
 			
+		}
+		
+		@Override
+		public List<User_RoleExtend> selectAllWithRoleWithUser(){
+			return user_roleDao.selectAllWithRoleWithUser();
 		}
 		
 
